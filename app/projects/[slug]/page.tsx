@@ -59,7 +59,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* Detail image grid */}
-      <section style={{ padding: "2.5rem", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem", flex: 1 }}>
+      <section className="detail-grid" className="detail-grid" style={{ padding: "2.5rem", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem", flex: 1 }}>
         {project.detail.map((src, i) => (
           <div key={i} style={{ width: "100%", aspectRatio: "4/3", overflow: "hidden" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
